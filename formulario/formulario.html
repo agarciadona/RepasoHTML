@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+<h1> Formulario</h1>
+<br>
+<form action="recibir.html" method="get">
+<fieldset style="width:200px">
+    <legend style="text-align: center;">Inscripción</legend>
+    <br>
+         <label for="nombre">Nombre *</label><br>
+            <input type="text" placeholder="Tu nombre " name="nombre" id="nombre" required ><br>
+            <br>
+        <label for="birth">Fecha de nacimiento *</label><br>
+            <input type="date" placeholder="fecha de nacimiento" name="birth" id="birth" required><br>
+            <br>
+
+        <label for="email" class="mail">E-mail *</label><br>
+            <input type="email" placeholder="tu email" name="email" id="email" required><br>
+            <br>
+        <label for="pass">Password *</label><br>
+            <input type="password" placeholder="12 espacios" name="password" id="pass" maxlength="12" required><br>
+            <br>
+        <label for="texto">Gustos</label><br>
+            <textarea name="texto" id="texto" placeholder="Escribe aquí sobre tus gustos de videojuegos..." cols="30" rows="3" maxlength="200"  style="resize:none"></textarea>
+            <br>
+            <h4>Género favorito</h4>
+            <input type="radio" name="Género" id="mmo" value="mmo">
+            <label for="mmo">MMOs</label>
+            <br>
+            <input type="radio" name="Género" id="RPG/JRPG" value="RPG/JRPG">
+            <label for="RPG/JRPG">RPG/JRPGs</label>
+            <br>
+            <input type="radio" name="Género" id="shooters" value="shooters">
+            <label for="shooters">shooters</label>
+            <br>    
+            <input type="radio" name="Género" id="MOBA" value="MOBA">
+            <label for="MOBA">MOBAs</label>
+            <br>
+            <input type="radio" name="Género" id="otro" value="otro">
+            <label for="otro">Otros</label>
+            <br>
+            <br>
+            <input type="submit" value="enviar">
+            <br>
+            </fieldset>
+        </form>
+    </body>
+</html>
